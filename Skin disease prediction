@@ -1,0 +1,30 @@
+This project implements a skin disease prediction system using a Random Forest for classification and predefined VGG16 model for feature extraction .The model is trained and evaluated on a dataset containing images of only 2 particular diseases benign and malignant .
+Approach :
+1. Feature Extraction with VGG16 :
+   We use the concept of Transfer Learning where we use a predefined model from Imagenet in keras .
+   This extracts the features that are used as input for classification
+2. Classification with random Forest :
+   The extracted features are used as input to Random Forest classifier
+   This predicts the type of skin disease
+Prerequisites
+Ensure Python 3.8+ is installed .
+Dependencies
+1.tensorflow
+2.keras
+3.numpy
+4.matplotlib
+5.scikit-learn
+6.pandas
+Dataset
+The data consistes of skin disease images classified into 2 classes.
+This consists of train and test folders.
+Results
+Model Performance
+Accuracy : 84%
+ROC(area) :0.92
+Conclusion
+VGG16 helps in extracting the deep feature which helps in classification performance
+Random Forest part of ensemble learning uses multiple decision trees which train on subsets of images for classification
+Achieves accuracy (84%) and strong AUC-ROC (0.92) ,making it an efficient model for skin disease prediction
+
+   
